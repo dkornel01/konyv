@@ -1,6 +1,6 @@
 package konyvtarprogram;
 
-public abstract class AbstractTermek implements Kolcsonozheto
+public abstract class AbstractTermek
 {
     String cime;
     int hosszPercben;

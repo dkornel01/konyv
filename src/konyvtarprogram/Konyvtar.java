@@ -1,7 +1,5 @@
 package konyvtarprogram;
 
-import java.util.UUID;
-
 public class Konyvtar
 {
     private final AbstractTermek[] termekek;
@@ -32,7 +30,7 @@ public class Konyvtar
     {
         for (AbstractTermek termek : termekek)
         {
-            System.out.println(UUID.randomUUID() + ": " + termek);
+            System.out.println(termek);
         }
     }
     
@@ -40,10 +38,16 @@ public class Konyvtar
     {
         for (AbstractTermek termek : termekek)
         {
-            if (termek instanceof Kolcsonozheto k)
+            if (termek instanceof Kolcsonozheto)
             {
-                System.out.println(UUID.randomUUID() + ": " + k);
+                System.out.println((Kolcsonozheto)termek);
             }
+            
+            // Így nem működik ?????
+            /*if (termek instanceof Kolcsonozheto k)
+            {
+                System.out.println(k);
+            }*/
         }
     }
 }

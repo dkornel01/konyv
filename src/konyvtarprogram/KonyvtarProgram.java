@@ -16,7 +16,11 @@ public class KonyvtarProgram
     
     private void run()
     {
-        // itt fel kell vinni egy pár terméket
+        konyvtar.felvesz(new CD("asd", 128));
+        konyvtar.felvesz(new CD("fgh", 120));
+        konyvtar.felvesz(new DVD("qwe", 118));
+        konyvtar.felvesz(new DVD("rtz", 135));
+        konyvtar.felvesz(new DVD("xyz", 140));
         konyvtar.termekekKiir();
         konyvtar.kolcsonozhetoketKiir();
     }
